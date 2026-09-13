@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Job1 Construction LLC | Quality Work. Honest Value.</title>
+  <meta name="description" content="Job1 Construction LLC provides residential remodeling, commercial construction, kitchen renovations, outdoor living spaces, and dependable home improvement services in Lansdale, PA.">
+  <style>
+    :root {
+      --bg: #0b0d0f;
+      --bg-soft: #12171a;
+      --panel: #161b1e;
+      --panel-2: #1d2428;
+      --ink: #f3f4f2;
+      --muted: #b1b7b9;
+      --line: rgba(255,255,255,0.08);
+      --accent: #d88c2d;
+      --accent-strong: #ffb14d;
+      --accent-soft: rgba(216,140,45,0.15);
+      --stone: #e9e5de;
+      --shadow: 0 20px 60px rgba(0,0,0,0.22);
+      --max: 1180px;
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button, input, textarea, select { font: inherit; }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: #070909;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+    }
+    .topbar .wrap {
+      min-height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 24px;
+      flex-wrap: wrap;
+      padding: 8px 0;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(11, 13, 15, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav {
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 26px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      min-width: 210px;
+    }
+    .site-logo {
+      width: 240px;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 18px rgba(0,0,0,0.16));
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: transparent;
+      color: var(--ink);
+      border: 0;
+      cursor: pointer;
+      padding: 6px 8px;
+    }
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .navlinks a {
+      position: relative;
+      color: rgba(255,255,255,0.8);
+      padding: 32px 0 18px;
+      transition: color 0.2s ease;
+    }
+    .navlinks a:hover,
+    .navlinks a.active {
+      color: var(--ink);
+    }
+    .navlinks a.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 6px;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 999px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      background: var(--accent);
+      color: #111;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.76rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      box-shadow: 0 12px 24px rgba(216,140,45,0.22);
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      background: var(--accent-strong);
+      box-shadow: 0 20px 28px rgba(216,140,45,0.3);
+    }
+    .btn-outline {
+      background: transparent;
+      border-color: rgba(255,255,255,0.45);
+      color: #fff;
+      box-shadow: none;
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.06);
+      box-shadow: none;
+    }
+
+    .hero {
+      position: relative;
+      background:
+        linear-gradient(90deg, rgba(5, 7, 8, 0.9) 0%, rgba(5, 7, 8, 0.7) 34%, rgba(5, 7, 8, 0.45) 60%, rgba(5, 7, 8, 0.28) 100%),
+        url("https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1800") center/cover no-repeat;
+      min-height: 760px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(11,13,15,0.15), rgba(11,13,15,0.72));
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      padding: 110px 0 120px;
+    }
+    .eyebrow {
+      margin-bottom: 18px;
+      font-size: 0.75rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent-strong);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(3.2rem, 7vw, 7rem);
+      line-height: 0.9;
+      letter-spacing: -0.07em;
+      text-transform: uppercase;
+      max-width: 870px;
+    }
+    .hero p {
+      margin: 22px 0 32px;
+      max-width: 620px;
+      font-size: 1.14rem;
+      color: rgba(255,255,255,0.8);
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .trustbar {
+      position: relative;
+      z-index: 2;
+      margin-top: -46px;
+    }
+    .trustgrid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      background: rgba(22, 27, 30, 0.96);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .trustitem {
+      padding: 26px 24px;
+      border-right: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    }
+    .trustitem:last-child { border-right: 0; }
+    .trustitem strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.82rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+    }
+    .trustitem span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    section {
+      padding: 108px 0;
+    }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 42px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(2.3rem, 4vw, 4rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+    }
+    .section-head p {
+      max-width: 560px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .services {
+      background: linear-gradient(180deg, #f5f3ee 0%, #efeae2 100%);
+      color: #171a1c;
+    }
+    .services .section-head p { color: #4b5358; }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .service {
+      position: relative;
+      overflow: hidden;
+      min-height: 280px;
+      padding: 28px 24px 26px;
+      background: rgba(255,255,255,0.74);
+      border: 1px solid rgba(22,28,31,0.1);
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(15, 17, 19, 0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .service::before {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+      opacity: 0.8;
+    }
+    .service:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 22px 36px rgba(17, 20, 22, 0.12);
+    }
+    .num {
+      display: inline-block;
+      margin-bottom: 22px;
+      color: rgba(23,26,28,0.5);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .service h3 {
+      margin: 0 0 12px;
+      font-size: 1.42rem;
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: -0.03em;
+    }
+    .service p {
+      margin: 0;
+      color: #4c5257;
+      font-size: 0.96rem;
+    }
+
+    .projects {
+      background: #0b0d0f;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-rows: 300px 300px;
+      gap: 18px;
+    }
+    .project {
+      position: relative;
+      overflow: hidden;
+      border-radius: 22px;
+      background: #1e2326;
+      box-shadow: var(--shadow);
+    }
+    .project:first-child { grid-row: 1 / 3; }
+    .project img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+    .project:hover img { transform: scale(1.05); }
+    .project::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.78));
+    }
+    .project-copy {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 22px;
+      z-index: 1;
+      transition: transform 0.3s ease;
+    }
+    .project:hover .project-copy { transform: translateY(-4px); }
+    .project-copy small {
+      color: var(--accent-strong);
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+    }
+    .project-copy h3 {
+      margin: 8px 0 0;
+      font-size: clamp(1.2rem, 2vw, 2rem);
+      line-height: 1.05;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+    }
+
+    .about {
+      background: #12171a;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about-img {
+      width: 100%;
+      height: 560px;
+      object-fit: cover;
+      border-radius: 26px;
+      box-shadow: var(--shadow);
+    }
+    .about h2 {
+      margin: 0 0 18px;
+      font-size: clamp(2.4rem, 5vw, 4.7rem);
+      letter-spacing: -0.06em;
+      line-height: 0.92;
+      text-transform: uppercase;
+    }
+    .about p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+    .checks {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px 18px;
+      margin: 28px 0 30px;
+    }
+    .check {
+      border-top: 1px solid var(--line);
+      padding-top: 15px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+    }
+    .check b {
+      color: var(--accent-strong);
+      margin-right: 8px;
+    }
+
+    .cta {
+      background: linear-gradient(90deg, var(--accent) 0%, #f2b056 100%);
+      color: #111;
+      padding: 68px 0;
+    }
+    .cta-grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .cta h2 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(2.2rem, 4.5vw, 4.5rem);
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+    }
+    .cta .btn {
+      background: #111;
+      color: #fff;
+      box-shadow: none;
+      white-space: nowrap;
+    }
+    .cta .btn:hover { background: #1c1d1f; }
+
+    .contact {
+      background: var(--bg);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 66px;
+      align-items: start;
+    }
+    .contact h2 {
+      margin: 0 0 22px;
+      font-size: clamp(2.4rem, 4vw, 4.7rem);
+      line-height: 0.92;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+    }
+    .contact-info {
+      color: var(--muted);
+    }
+    .contact-info p {
+      margin: 0 0 20px;
+      max-width: 420px;
+    }
+    .contact-info a {
+      display: block;
+      margin: 10px 0;
+      color: var(--ink);
+      font-weight: 700;
+    }
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    input, textarea, select {
+      width: 100%;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      color: var(--ink);
+      padding: 16px 18px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.42); }
+    input:focus, textarea:focus, select:focus {
+      border-color: rgba(255,177,77,0.9);
+      box-shadow: 0 0 0 3px rgba(255,177,77,0.15);
+    }
+    textarea {
+      grid-column: 1 / -1;
+      min-height: 160px;
+      resize: vertical;
+    }
+    .form-note {
+      grid-column: 1 / -1;
+      color: #8a9195;
+      font-size: 0.76rem;
+      margin-top: -4px;
+    }
+    form .btn {
+      grid-column: 1 / -1;
+      justify-self: start;
+      margin-top: 6px;
+    }
+
+    footer {
+      background: #070909;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1.8fr 0.8fr 1fr;
+      gap: 60px;
+      padding: 58px 0 42px;
+    }
+    .footer-brand {
+      margin-bottom: 16px;
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--ink);
+    }
+    .footer-about {
+      max-width: 430px;
+      margin: 0 0 18px;
+      color: #a9b1b4;
+    }
+    .footer-title {
+      margin-bottom: 16px;
+      color: var(--ink);
+      font-size: 0.74rem;
+      font-weight: 900;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+    }
+    .footer-links a, .footer-contact a {
+      display: block;
+      color: var(--muted);
+      margin: 10px 0;
+    }
+    .footer-links a:hover, .footer-contact a:hover {
+      color: var(--accent-strong);
+    }
+    .footer-estimate {
+      margin-top: 16px;
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--line);
+      padding: 20px 0 26px;
+    }
+    .footer-bottom .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 900px) {
+      .navlinks {
+        display: none;
+        position: absolute;
+        top: 88px;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 16px 20px 18px;
+        background: rgba(11,13,15,0.98);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+      .navlinks.open { display: flex; }
+      .navlinks a {
+        display: block;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .navlinks a:last-child { border-bottom: 0; }
+      .navlinks a.active::after { display: none; }
+      .menu-toggle { display: block; }
+      .hero { min-height: 660px; }
+      .trustgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .project-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+      .project:first-child { grid-row: auto; }
+      .project { min-height: 330px; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      .cta-grid { flex-direction: column; align-items: flex-start; }
+      .footer-main { grid-template-columns: 1fr; gap: 30px; }
+    }
+
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 20px, var(--max)); }
+      .topbar .wrap { justify-content: center; }
+      .hero-content { padding-top: 80px; }
+      .hero p { font-size: 1rem; }
+      .trustgrid, .service-grid, .checks, form { grid-template-columns: 1fr; }
+      .trustitem { border-right: 0; border-bottom: 1px solid var(--line); }
+      .trustitem:last-child { border-bottom: 0; }
+      .project { min-height: 280px; }
+      section { padding: 80px 0; }
+      .form-note, form .btn { grid-column: auto; }
+      textarea { grid-column: auto; }
+      .footer-bottom .wrap { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <span>267-506-2605</span>
+      <span>Joe.obrien@job1-construction.com</span>
+      <span>Lansdale, Pennsylvania</span>
+    </div>
+  </div>
+
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#" aria-label="Job1 Construction home">
+        <img class="site-logo" src="job1-logo-header.png" alt="Job1 Construction LLC logo">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="navlinks" id="main-menu">
+        <a class="active" href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-content reveal">
+          <div class="eyebrow">Residential + Commercial Construction</div>
+          <h1>Built With<br>Purpose.</h1>
+          <p>From kitchen remodels and custom additions to commercial fit-outs and outdoor living spaces, we deliver clean, dependable craftsmanship from start to finish.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Get a Free Estimate</a>
+            <a class="btn btn-outline" href="#projects">See Our Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trustbar">
+      <div class="wrap trustgrid reveal">
+        <div class="trustitem"><strong>Residential</strong><span>Renovations & additions</span></div>
+        <div class="trustitem"><strong>Commercial</strong><span>Fit-outs & framing</span></div>
+        <div class="trustitem"><strong>Remodeling</strong><span>Kitchens & interiors</span></div>
+        <div class="trustitem"><strong>Outdoor Living</strong><span>Decks & patios</span></div>
+      </div>
+    </div>
+
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">What We Do</div>
+            <h2>Construction<br>Services</h2>
+          </div>
+          <p>Whether you're improving a home or building for business, Job1 brings steady communication, honest pricing, and quality workmanship to every project.</p>
+        </div>
+        <div class="service-grid reveal">
+          <article class="service"><span class="num">01</span><h3>Residential Construction</h3><p>Additions, renovations, repairs, and home improvements built around daily life.</p></article>
+          <article class="service"><span class="num">02</span><h3>Commercial Construction</h3><p>Reliable buildouts, framing, renovations, and practical spaces designed to work.</p></article>
+          <article class="service"><span class="num">03</span><h3>Kitchen Remodeling</h3><p>Functional layouts, quality finishes, and design details that make a kitchen feel complete.</p></article>
+          <article class="service"><span class="num">04</span><h3>Outdoor Living</h3><p>Decks, patios, and exterior upgrades built for durability and everyday enjoyment.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">Featured Work</div>
+            <h2>Recent<br>Projects</h2>
+          </div>
+          <p>Strong results speak for themselves. This layout uses larger imagery and cleaner spacing to let the craftsmanship stand out.</p>
+        </div>
+        <div class="project-grid reveal">
+          <a class="project" href="#">
+            <img src="project-kitchen.png" alt="Kitchen remodeling project">
+            <div class="project-copy"><small>Residential</small><h3>Kitchen Renovation</h3></div>
+          </a>
+          <a class="project" href="#">
+            <img src="project-home.png" alt="Residential construction project">
+            <div class="project-copy"><small>Residential</small><h3>Home Improvement</h3></div>
+          </a>
+          <a class="project" href="#">
+            <img src="project-deck.png" alt="Outdoor construction project">
+            <div class="project-copy"><small>Outdoor Living</small><h3>Deck & Exterior</h3></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid reveal">
+        <img class="about-img" src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Construction professionals reviewing a project">
+        <div>
+          <div class="eyebrow">Why Job1 Construction</div>
+          <h2>Built Around Your Project.</h2>
+          <p>We take a hands-on, practical approach to every build, whether it's a family renovation, a commercial space update, or an exterior upgrade.</p>
+          <p>Job1 combines craftsmanship, communication, and real-world solutions so your project stays on track and turns out exactly the way you want it.</p>
+          <div class="checks">
+            <div class="check"><b>✓</b> Attention to Detail</div>
+            <div class="check"><b>✓</b> Clear Communication</div>
+            <div class="check"><b>✓</b> Quality Craftsmanship</div>
+            <div class="check"><b>✓</b> Residential & Commercial</div>
+          </div>
+          <a href="#contact" class="btn">Discuss Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap cta-grid reveal">
+        <h2>Have a project in mind? Let's build it.</h2>
+        <a href="#contact" class="btn">Request an Estimate →</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid reveal">
+        <div>
+          <div class="eyebrow">Contact</div>
+          <h2>Start Your Project.</h2>
+          <div class="contact-info">
+            <p>Tell us what you're planning and we'll reach out to talk through the details.</p>
+            <a href="tel:+12675062605">267-506-2605</a>
+            <a href="mailto:Joe.obrien@job1-construction.com">Joe.obrien@job1-construction.com</a>
+          </div>
+        </div>
+        <form onsubmit="event.preventDefault(); alert('Thanks! This demo form can be connected to Job1\'s email when the site goes live.');">
+          <input required autocomplete="name" placeholder="Your Name *">
+          <input type="email" required autocomplete="email" placeholder="Email Address *">
+          <input type="tel" autocomplete="tel" placeholder="Phone Number">
+          <select aria-label="Project type">
+            <option value="">Select Project Type</option>
+            <option>Residential Construction</option>
+            <option>Commercial Construction</option>
+            <option>Kitchen Remodeling</option>
+            <option>Deck / Outdoor Living</option>
+            <option>Other</option>
+          </select>
+          <textarea required placeholder="Tell us about your project — what would you like done? *"></textarea>
+          <div class="form-note">* Required fields. No obligation — this form is for an initial project inquiry.</div>
+          <button class="btn" type="submit">Request My Estimate →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-main reveal">
+      <div>
+        <div class="footer-brand">Job1 Construction LLC</div>
+        <p class="footer-about">Residential and commercial construction with a focus on quality workmanship, dependable service, and attention to detail.</p>
+        <a class="btn footer-estimate" href="#contact">Request an Estimate</a>
+      </div>
+
+      <div>
+        <div class="footer-title">Quick Links</div>
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-title">Contact</div>
+        <div class="footer-contact">
+          <a href="tel:+12675062605">267-506-2605</a>
+          <a href="mailto:Joe.obrien@job1-construction.com">Joe.obrien@job1-construction.com</a>
+          <span>Lansdale, Pennsylvania</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="wrap">
+        <span>© 2026 Job1 Construction LLC. All rights reserved.</span>
+        <span>Residential & Commercial Construction • Lansdale, PA</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('#main-menu');
+
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      toggle.textContent = open ? '×' : '☰';
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.textContent = '☰';
+      });
+    });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>
