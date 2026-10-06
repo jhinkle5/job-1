@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-label="Job1 Construction LLC logo">
+  <defs>
+    <linearGradient id="orangeFill" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ec9d3c"/>
+      <stop offset="100%" stop-color="#d67f1a"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke="#1f2d4d" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M170 510 L450 250 L730 510" opacity="0.95"/>
+    <path d="M240 510 V730 H660 V510"/>
+    <path d="M150 485 L450 180 L750 485" opacity="0.75"/>
+    <path d="M450 180 V730" opacity="0.75"/>
+    <path d="M350 788 L350 535" opacity="0.9"/>
+    <path d="M550 788 L550 535" opacity="0.9"/>
+    <path d="M195 415 H705" opacity="0.7"/>
+    <path d="M115 610 H785" opacity="0.7"/>
+    <path d="M450 250 V110" opacity="0.8"/>
+    <path d="M220 510 L220 655" opacity="0.8"/>
+    <path d="M680 510 L680 655" opacity="0.8"/>
+  </g>
+
+  <g transform="translate(0, 20)">
+    <g transform="translate(440 430) rotate(25)">
+      <rect x="-110" y="-248" width="220" height="58" rx="14" fill="url(#orangeFill)" stroke="#1f2d4d" stroke-width="12"/>
+      <g fill="#1f2d4d">
+        <rect x="-118" y="-205" width="16" height="160"/>
+        <rect x="-88" y="-205" width="16" height="160"/>
+        <rect x="-58" y="-205" width="16" height="160"/>
+        <rect x="-28" y="-205" width="16" height="160"/>
+        <rect x="2" y="-205" width="16" height="160"/>
+        <rect x="32" y="-205" width="16" height="160"/>
+        <rect x="62" y="-205" width="16" height="160"/>
+        <rect x="92" y="-205" width="16" height="160"/>
+      </g>
+    </g>
+
+    <g transform="translate(450 470) rotate(26)">
+      <path d="M-150 50 L-18 -140 L118 50 Z" fill="url(#orangeFill)" stroke="#1f2d4d" stroke-width="14"/>
+      <path d="M-56 34 L31 -96 L107 34 Z" fill="#d67f1a" opacity="0.6"/>
+      <path d="M138 34 L180 34 L120 -40 Z" fill="#1f2d4d"/>
+      <path d="M-104 82 L10 -72 L62 82 Z" fill="none" stroke="#1f2d4d" stroke-width="12" opacity="0.9"/>
+    </g>
+
+    <g transform="translate(455 405) rotate(-28)">
+      <rect x="-8" y="-150" width="70" height="225" rx="16" fill="#1f2d4d"/>
+      <rect x="43" y="-150" width="18" height="225" rx="9" fill="#1f2d4d"/>
+      <rect x="-42" y="-180" width="110" height="42" rx="8" fill="url(#orangeFill)" stroke="#1f2d4d" stroke-width="8"/>
+      <path d="M10 -100 L68 40" stroke="#1f2d4d" stroke-width="10"/>
+      <path d="M-40 -40 L130 -40" stroke="#1f2d4d" stroke-width="8" opacity="0.75"/>
+    </g>
+  </g>
+
+  <g stroke="#1f2d4d" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M175 610 L175 720"/>
+    <path d="M725 610 L725 720"/>
+    <path d="M190 610 H710"/>
+    <path d="M447 250 L447 720"/>
+    <path d="M100 720 H800"/>
+    <path d="M450 165 L450 240"/>
+    <path d="M170 510 H730"/>
+  </g>
+</svg>
